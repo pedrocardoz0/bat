@@ -14,5 +14,5 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: expressjs/express
-
+          path: express
       - run: cd ./express & npm i & npm run test
