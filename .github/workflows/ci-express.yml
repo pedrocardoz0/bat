@@ -13,4 +13,4 @@ jobs:
       - uses: actions/checkout@master
         with:
           name: expressjs/express
-      - run: npm run test
+      - run: cd ./express & npm run test
