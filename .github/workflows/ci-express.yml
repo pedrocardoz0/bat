@@ -15,4 +15,7 @@ jobs:
         with:
           repository: expressjs/express
           path: express
+      outputs:
+        output1: ${{ GITHUB_WORKSPACE  }}
+
       - run: cd ./express & npm i & npm run test
