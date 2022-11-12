@@ -4,8 +4,6 @@ on: [push]
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
-    outputs:
-      output1: ${{ GITHUB_WORKSPACE  }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -17,4 +15,11 @@ jobs:
         with:
           repository: expressjs/express
           path: express
+
+      - name: "Workspace folder"
+        run: echo '${{ GITHUB_WORKSPACE }}'
+      
+      - name: "ls folder"
+        run: ls
+      
       - run: cd ./express & npm i & npm run test
