@@ -17,6 +17,8 @@ jobs:
           path: express
       
       - name: "ls folder"
-        run: ls
+        run: ls -la
       
-      - run: cd express & ls
+      - run: |
+        cd express
+        ls -la
