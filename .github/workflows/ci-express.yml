@@ -10,7 +10,9 @@ jobs:
         with:
           node-version: '14'
           
-      - uses: actions/checkout@master
+      - name: Clone Express Repo
+        uses: actions/checkout@v2
         with:
-          name: expressjs/express
+          repository: expressjs/express
+          
       - run: cd ./express & npm run test
