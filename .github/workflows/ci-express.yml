@@ -15,10 +15,7 @@ jobs:
         with:
           repository: expressjs/express
           path: express
-      
-      - name: "ls folder"
+
+      - name: "Test"
+        working-directory: express
         run: ls -la
-      
-      - run: |
-        cd express
-        ls -la
