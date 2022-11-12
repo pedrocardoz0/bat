@@ -15,9 +15,6 @@ jobs:
         with:
           repository: expressjs/express
           path: express
-
-      - name: "Workspace folder"
-        run: echo '${{ GITHUB_WORKSPACE }}'
       
       - name: "ls folder"
         run: ls
