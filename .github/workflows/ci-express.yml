@@ -19,4 +19,4 @@ jobs:
       - name: "ls folder"
         run: ls
       
-      - run: cd ./express & npm i & npm run test
+      - run: cd express & ls
